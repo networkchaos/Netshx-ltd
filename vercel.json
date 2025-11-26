@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/boot2root-bandits",
+      "destination": "/boot2root-bandits/index.html"
+    },
+    {
+      "source": "/boot2root-bandits/",
+      "destination": "/boot2root-bandits/index.html"
+    },
+    {
+      "source": "/boot2root-bandits/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
+      "destination": "/boot2root-bandits/$1"
+    },
+    {
+      "source": "/boot2root-bandits/(.*)",
+      "destination": "/boot2root-bandits/index.html"
+    },
+    {
+      "source": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
+      "destination": "/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+

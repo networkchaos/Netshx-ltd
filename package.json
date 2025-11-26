@@ -1,0 +1,26 @@
+{
+  "name": "netshx-portfolio",
+  "version": "1.0.0",
+  "description": "NETSHX LTD - Cybersecurity & Tech Solutions Portfolio Website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:b2r": "cd boot2root-bandits && npm run dev",
+    "build": "vite build",
+    "build:all": "npm run build && cd boot2root-bandits && npm install && npm run build && cd .. && mkdir -p dist/boot2root-bandits && cp -r boot2root-bandits/dist/* dist/boot2root-bandits/",
+    "vercel-build": "npm run build && cd boot2root-bandits && npm install && npm run build && cd .. && mkdir -p dist/boot2root-bandits && cp -r boot2root-bandits/dist/* dist/boot2root-bandits/",
+    "preview": "vite preview",
+    "preview:all": "npm run preview & cd boot2root-bandits && npm run preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
+  }
+}
+
