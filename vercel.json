@@ -12,19 +12,11 @@
       "destination": "/boot2root-bandits/index.html"
     },
     {
-      "source": "/boot2root-bandits/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
-      "destination": "/boot2root-bandits/$1"
-    },
-    {
-      "source": "/boot2root-bandits/(.*)",
+      "source": "/boot2root-bandits/:path*",
       "destination": "/boot2root-bandits/index.html"
     },
     {
-      "source": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
-      "destination": "/$1"
-    },
-    {
-      "source": "/(.*)",
+      "source": "/:path*",
       "destination": "/index.html"
     }
   ]
